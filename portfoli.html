@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anubhav Maurya | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#3c0091",
+                        "on-secondary-fixed": "#23005c",
+                        "on-surface": "#e5e1e4",
+                        "on-primary-container": "#00285d",
+                        "tertiary-fixed": "#acedff",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#353437",
+                        "primary": "#adc6ff",
+                        "surface-dim": "#131315",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-secondary-container": "#c4abff",
+                        "outline-variant": "#424754",
+                        "on-background": "#e5e1e4",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#e5e1e4",
+                        "secondary-fixed": "#e9ddff",
+                        "surface-tint": "#adc6ff",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "surface-bright": "#39393b",
+                        "inverse-primary": "#005ac2",
+                        "secondary-container": "#571bc1",
+                        "outline": "#8c909f",
+                        "on-tertiary-container": "#002f38",
+                        "on-tertiary": "#003640",
+                        "surface": "#131315",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "surface-container-lowest": "#0e0e10",
+                        "on-primary-fixed": "#001a42",
+                        "primary-container": "#4d8eff",
+                        "surface-container": "#201f21",
+                        "tertiary-container": "#009eb9",
+                        "on-primary-fixed-variant": "#004395",
+                        "surface-container-low": "#1c1b1d",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "surface-variant": "#353437",
+                        "surface-container-high": "#2a2a2c",
+                        "secondary": "#d0bcff",
+                        "tertiary": "#4cd7f6",
+                        "on-tertiary-fixed": "#001f26",
+                        "primary-fixed": "#d8e2ff",
+                        "on-error-container": "#ffdad6",
+                        "background": "#131315",
+                        "on-surface-variant": "#c2c6d6",
+                        "inverse-on-surface": "#313032",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "on-primary": "#002e6a",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "sm": "8px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "container-max": "1200px",
+                        "xxl": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Geist"],
+                        "display-lg": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "body-md": ["Geist"],
+                        "label-md": ["JetBrains Mono"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-sm": ["Geist"]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-container selection:text-white">
+<canvas id="canvas-particles"></canvas>
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/5 shadow-sm">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity">Anubhav Maurya</div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="font-label-md text-label-md text-primary nav-link" href="#home">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link" href="#skills">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link" href="#projects">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link" href="#experience">Experience</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300 nav-link" href="#contact">Contact</a>
+<a class="primary-gradient px-md py-xs rounded-lg font-label-md text-white primary-glow transition-all active:scale-95 ml-md" href="#">Resume</a>
+</nav>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center px-gutter max-w-container-max mx-auto relative overflow-hidden" id="home">
+<div class="grid md:grid-cols-2 gap-xl items-center w-full">
+<div class="z-10">
+<h2 class="font-label-md text-tertiary mb-sm uppercase tracking-widest reveal">MERN Stack Developer | Full-Stack Engineer</h2>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-md leading-tight reveal">
+                    I am <span class="text-primary">Anubhav Maurya</span>
+</h1>
+<p class="font-body-lg text-on-surface-variant mb-xl reveal">
+    B.Tech CS student at PSIT Kanpur building production-grade full-stack web apps with React, Node.js, and MongoDB (MERN stack).
+</p>
+<div class="flex flex-wrap gap-md reveal">
+<a class="primary-gradient px-xl py-md rounded-lg font-label-md text-white primary-glow transition-all active:scale-95" href="#contact">Hire Me</a>
+<a class="border border-white/20 hover:bg-white/5 px-xl py-md rounded-lg font-label-md text-on-surface transition-all active:scale-95 flex items-center gap-sm" href="#">
+                        View Resume <span class="material-symbols-outlined text-[18px]">download</span>
+</a>
+</div>
+</div>
+<div class="relative flex justify-center items-center reveal">
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 relative z-10 transition-transform duration-700 hover:scale-105">
+<img alt="Anubhav Maurya" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_rcA_pl4HuUz5tnPB5BeJ1xj1ePmj2uZDYvXI42tLjaMtk6HmsZ81szP8w9GAdHNKJ1BsvuHji9z_thrHMuVsYjmHZ4D4i7DpXRYQqBYQIQmT86Y9FMWJvJmfm6oBlKlLByv5wiwVjRPFzzaY-cZHV59mHnC5TUDvQF4FZmCj6-oZ-itVMEteTZmopLpqRaZAfsLSj4ZpNsxsbnvyqLrSqZhEEwgFCGoucZl4qNnLV0xXZKoO0E8-3CWqejfUAbqBEqkdCU-fP4vg"/>
+</div>
+<div class="absolute w-72 h-72 md:w-96 md:h-96 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="absolute w-48 h-48 bg-secondary/10 blur-[80px] rounded-full -bottom-10 -right-10"></div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto reveal" id="about">
+<div class="grid md:grid-cols-3 gap-xl">
+<div class="md:col-span-1">
+<h2 class="font-headline-md text-headline-md text-on-surface border-l-4 border-primary pl-md">About Me</h2>
+</div>
+<div class="md:col-span-2">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                    I am a dedicated <span class="text-primary font-bold">B.Tech Computer Science</span> student at PSIT Kanpur. Comfortable owning the full lifecycle — from local development to live deployment — writing REST APIs, integrating third-party services, and managing NoSQL schemas. I ship real products, not just tutorials.
+                </p>
+<div class="grid sm:grid-cols-2 gap-md">
+<div class="glass-panel p-lg rounded-xl tilt-card">
+<span class="material-symbols-outlined text-primary mb-sm">layers</span>
+<h3 class="font-headline-sm text-on-surface mb-xs">Full-Stack Lifecycle</h3>
+<p class="text-on-surface-variant font-body-md">Managing everything from schema design to CI/CD pipelines and production rollouts.</p>
+</div>
+<div class="glass-panel p-lg rounded-xl tilt-card">
+<span class="material-symbols-outlined text-secondary mb-sm">api</span>
+<h3 class="font-headline-sm text-on-surface mb-xs">API First Design</h3>
+<p class="text-on-surface-variant font-body-md">Building robust backends with Node.js and Python for seamless frontend integration.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto reveal" id="skills">
+<h2 class="font-headline-md text-center mb-xl">Technical Arsenal</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Languages -->
+<div class="glass-panel p-xl rounded-xl group hover:border-primary/50 transition-all duration-500 tilt-card">
+<h3 class="font-headline-sm text-primary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined">terminal</span> Languages
+                </h3>
+<div class="flex flex-wrap gap-sm">
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">JavaScript (ES6+)</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Python</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Java</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">HTML5</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">CSS3</span>
+</div>
+</div>
+<!-- Frontend -->
+<div class="glass-panel p-xl rounded-xl group hover:border-secondary/50 transition-all duration-500 tilt-card">
+<h3 class="font-headline-sm text-secondary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined">desktop_windows</span> Frontend
+                </h3>
+<div class="flex flex-wrap gap-sm">
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">React.js</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Responsive UI</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Component Design</span>
+</div>
+</div>
+<!-- Backend -->
+<div class="glass-panel p-xl rounded-xl group hover:border-tertiary/50 transition-all duration-500 tilt-card">
+<h3 class="font-headline-sm text-tertiary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined">settings_input_component</span> Backend
+                </h3>
+<div class="flex flex-wrap gap-sm">
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Node.js</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Express.js</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">REST APIs</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Firebase</span>
+</div>
+</div>
+<!-- Database -->
+<div class="glass-panel p-xl rounded-xl group hover:border-primary/50 transition-all duration-500 tilt-card">
+<h3 class="font-headline-sm text-primary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined">database</span> Database
+                </h3>
+<div class="flex flex-wrap gap-sm">
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">MongoDB Atlas</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">NoSQL Design</span>
+</div>
+</div>
+<!-- Tools -->
+<div class="glass-panel p-xl rounded-xl group hover:border-secondary/50 transition-all duration-500 tilt-card">
+<h3 class="font-headline-sm text-secondary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined">construction</span> DevOps &amp; Tools
+                </h3>
+<div class="flex flex-wrap gap-sm">
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Git</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Vercel</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Render</span>
+<span class="px-sm py-xs bg-white/5 border border-white/10 rounded font-label-sm text-on-surface-variant">Kali Linux</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Strengths Section -->
+<section class="py-xxl bg-surface-container-low reveal">
+<div class="px-gutter max-w-container-max mx-auto">
+<h2 class="font-headline-md text-center mb-xl">Core Strengths</h2>
+<div class="flex flex-wrap justify-center gap-md">
+<div class="px-lg py-md glass-panel rounded-full font-label-md text-primary border border-primary/20">Full-Stack Thinking</div>
+<div class="px-lg py-md glass-panel rounded-full font-label-md text-secondary border border-secondary/20">Live Deployments</div>
+<div class="px-lg py-md glass-panel rounded-full font-label-md text-tertiary border border-tertiary/20">API Integration</div>
+<div class="px-lg py-md glass-panel rounded-full font-label-md text-primary border border-primary/20">Auth Systems</div>
+<div class="px-lg py-md glass-panel rounded-full font-label-md text-secondary border border-secondary/20">Self-Motivated</div>
+</div>
+</div>
+</section>
+<!-- Projects Bento Grid -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto reveal" id="projects">
+<h2 class="font-headline-md text-center mb-xl">Featured Projects</h2>
+<div class="grid md:grid-cols-2 gap-lg">
+<!-- Project 1: Root Bridge -->
+<div class="glass-panel rounded-xl overflow-hidden group relative tilt-card flex flex-col min-h-[400px]">
+<div class="p-xl flex flex-col h-full">
+<div class="flex gap-sm mb-md">
+<span class="px-sm py-xs bg-primary/20 text-primary rounded font-label-sm">React.js</span>
+<span class="px-sm py-xs bg-primary/20 text-primary rounded font-label-sm">Firebase Auth</span>
+</div>
+<h3 class="font-headline-md text-white mb-sm">Root Bridge</h3>
+<p class="text-on-surface-variant mb-lg">Modular, responsive component system built from scratch with React.js and Firebase. Features real-time data synchronisation and token-based user authentication.</p>
+<div class="mt-auto flex gap-md">
+<a class="text-primary hover:underline flex items-center gap-xs" href="https://rootbridge-zeta.vercel.app">Live Demo <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Project 2: Huddle -->
+<div class="glass-panel rounded-xl overflow-hidden group relative tilt-card flex flex-col min-h-[400px]">
+<div class="p-xl flex flex-col h-full">
+<div class="flex gap-sm mb-md">
+<span class="px-sm py-xs bg-secondary/20 text-secondary rounded font-label-sm">Python Backend</span>
+<span class="px-sm py-xs bg-secondary/20 text-secondary rounded font-label-sm">MongoDB Atlas</span>
+</div>
+<h3 class="font-headline-md text-white mb-sm">Huddle</h3>
+<p class="text-on-surface-variant mb-lg">Engineered a RESTful API backend in Python using Express-style design principles. Implemented NoSQL schemas in MongoDB Atlas for efficient querying and persistent storage.</p>
+<div class="mt-auto flex gap-md">
+<a class="text-secondary hover:underline flex items-center gap-xs" href="https://huddle-in83.onrender.com">Live Demo <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & Education -->
+<section class="py-xxl bg-surface-container-low reveal" id="experience">
+<div class="px-gutter max-w-container-max mx-auto">
+<h2 class="font-headline-md text-center mb-xl">Academic Journey</h2>
+<div class="relative timeline-line space-y-xl">
+<!-- B.Tech -->
+<div class="flex flex-col md:flex-row items-center justify-between w-full">
+<div class="w-full md:w-[45%] glass-panel p-lg rounded-xl text-right md:block hidden tilt-card">
+<span class="font-label-md text-primary">2024 - Present</span>
+</div>
+<div class="z-10 w-12 h-12 bg-primary rounded-full flex items-center justify-center border-4 border-background shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-background text-2xl" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div class="w-full md:w-[45%] glass-panel p-lg rounded-xl tilt-card">
+<div class="md:hidden font-label-md text-primary mb-xs">2024 - Present</div>
+<h3 class="font-headline-sm text-on-surface">B.Tech in Computer Science and Engineering</h3>
+<p class="text-on-surface-variant">PSIT Kanpur | 3rd Year. Currently deepening expertise in Node.js &amp; Express.js to complete the MERN stack while expanding into Native Android Development.</p>
+</div>
+</div>
+<!-- XII -->
+<div class="flex flex-col md:flex-row-reverse items-center justify-between w-full">
+<div class="w-full md:w-[45%] glass-panel p-lg rounded-xl text-left md:block hidden tilt-card">
+<span class="font-label-md text-secondary">Completed 2023</span>
+</div>
+<div class="z-10 w-12 h-12 bg-secondary rounded-full flex items-center justify-center border-4 border-background shadow-lg shadow-secondary/20">
+<span class="material-symbols-outlined text-background text-2xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<div class="w-full md:w-[45%] glass-panel p-lg rounded-xl md:text-right tilt-card">
+<div class="md:hidden font-label-md text-secondary mb-xs">Completed 2023</div>
+<h3 class="font-headline-sm text-on-surface">Class XII - Higher Secondary</h3>
+<p class="text-on-surface-variant">Successfully completed pre-university education with a strong focus on Science and Mathematics.</p>
+</div>
+</div>
+<!-- X -->
+<div class="flex flex-col md:flex-row items-center justify-between w-full">
+<div class="w-full md:w-[45%] glass-panel p-lg rounded-xl text-right md:block hidden tilt-card">
+<span class="font-label-md text-tertiary">Completed 2021</span>
+</div>
+<div class="z-10 w-12 h-12 bg-tertiary rounded-full flex items-center justify-center border-4 border-background shadow-lg shadow-tertiary/20">
+<span class="material-symbols-outlined text-background text-2xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="w-full md:w-[45%] glass-panel p-lg rounded-xl tilt-card">
+<div class="md:hidden font-label-md text-tertiary mb-xs">Completed 2021</div>
+<h3 class="font-headline-sm text-on-surface">Class X - Secondary</h3>
+<p class="text-on-surface-variant">Foundation years focused on developing core analytical and problem-solving skills.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GitHub Stats -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto reveal">
+<h2 class="font-headline-md text-center mb-xl">Code Contributions</h2>
+<div class="grid md:grid-cols-2 gap-lg">
+<div class="glass-panel p-xl rounded-xl flex flex-col items-center justify-center tilt-card">
+<img alt="GitHub Stats" class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjsNL9u1LEmiolhZQQKQKO0fsx1cVZDFV9MdsqWF1DfKI2Nw-emlvH3G_aXcnchfgL9OUbNVi5BF1FQlXVOLnLqDt70e0e-icO_IaxQAOsGvKLw0rJ0XSNucNhg3j8UPnA3_B6POZusxeEEqrudvT2DZNkqDQepQWszTwWg6CmoMLo57Znd3FZpSKcOpbHKJ2YCjBKbkohBBbIWWvTk9yNJxxax5_P3hbE8wu75RYcfXK1hu8p--ZzgTaThXNGhGRpSCWzrzp4zOFx"/>
+</div>
+<div class="glass-panel p-xl rounded-xl flex flex-col items-center justify-center tilt-card">
+<img alt="Top Languages" class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD22lz6nwgGeK0nMGPUtpKDoDEgjnTEKo73MU7ha348wPaZGowm7vJ84ymBuElgKFZTfDnOA_rTPif0zwxs2thawq6rueTEWDYsMzUp6OD8U_IhpCVrA-0uFuiX0WMw-ZrbGR7TsGJymViDEDFAI9T5_SdRyhtXkfN8R_aPfO-l8m1wiUfJLMPbJPCDskYw1LRT3h9nXWs_Ob8VGT_JUamtQa6eCk0-VyY6RsTHvfZoPbWZcpyRqsnYmK4wRM2rPcnkMAm0i1ilqJZ_"/>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xxl px-gutter max-w-container-max mx-auto reveal" id="contact">
+<div class="grid md:grid-cols-2 gap-xl">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md mb-md">Let's build something <span class="text-primary">extraordinary</span> together.</h2>
+<p class="font-body-lg text-on-surface-variant mb-xl">I'm currently seeking new opportunities and open to collaborative projects. Feel free to reach out via the form or social links.</p>
+<div class="space-y-md">
+<div class="flex items-center gap-md group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background transition-all">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Email</div>
+<div class="font-body-md text-on-surface">anubhavmaurya2204@gmail.com</div>
+</div>
+</div>
+<div class="flex items-center gap-md group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-background transition-all">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Location</div>
+<div class="font-body-md text-on-surface">Kanpur, India</div>
+</div>
+</div>
+</div>
+<div class="flex gap-md mt-xl">
+<a class="w-10 h-10 flex items-center justify-center border border-white/10 rounded-full hover:bg-primary hover:text-background transition-all" href="https://linkedin.com/in/anubhav-maurya-973482379">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center border border-white/10 rounded-full hover:bg-secondary hover:text-background transition-all" href="https://github.com/anubhavmaurya22">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low border-t border-white/5 w-full py-xl mt-xxl">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-md">
+<div class="font-label-md text-label-md text-on-surface">© 2025 Anubhav Maurya. Built with Precision.</div>
+<div class="flex gap-lg">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-opacity duration-200" href="https://github.com/anubhavmaurya22">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-opacity duration-200" href="https://linkedin.com/in/anubhav-maurya-973482379">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-opacity duration-200" href="mailto:anubhavmaurya2204@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body></html>

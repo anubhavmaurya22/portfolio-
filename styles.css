@@ -1,0 +1,96 @@
+body {
+    background-color: #0a0a0c;
+    color: #e5e1e4;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.glass-panel {
+    background: rgba(22, 22, 26, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel:hover {
+    border: 1px solid rgba(173, 198, 255, 0.3);
+    background: rgba(22, 22, 26, 0.6);
+}
+.primary-gradient {
+    background: linear-gradient(135deg, #4d8eff, #571bc1);
+}
+.primary-glow:hover {
+    box-shadow: 0 0 25px rgba(77, 142, 255, 0.5);
+}
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+#canvas-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal, .reveal.active {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .typing-cursor::after {
+        display: none;
+    }
+}
+
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #4d8eff, transparent);
+    transform: translateX(-50%);
+}
+
+.tilt-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.tilt-card:hover {
+    transform: scale(1.02);
+}
+
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #adc6ff;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
