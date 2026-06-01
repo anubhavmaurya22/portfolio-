@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Anubhav Maurya — Personal Portfolio
 
 A sleek, dark-themed personal portfolio website built with **HTML**, **CSS**, and **JavaScript**, showcasing my skills, projects, and academic journey as a MERN Stack Developer.
@@ -79,3 +80,7 @@ Or simply drag `portfoli.html` into any modern browser.
 ## 📄 License
 
 © 2025 Anubhav Maurya. All rights reserved.
+=======
+# portfolio-
+it my portfolio for work and submit in the companies 
+>>>>>>> a44af1339d8503188c36541082fa5f2aeaf9ee1c
