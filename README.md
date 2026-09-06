@@ -1,86 +1,64 @@
-<<<<<<< HEAD
-# 🚀 Anubhav Maurya — Personal Portfolio
+# Anubhav Maurya — Software Engineer Portfolio
 
-A sleek, dark-themed personal portfolio website built with **HTML**, **CSS**, and **JavaScript**, showcasing my skills, projects, and academic journey as a MERN Stack Developer.
+A modern, dark-themed portfolio website showcasing full-stack development and machine learning projects.
 
----
-
-## 📁 Project Structure
-
-```
-n/
-├── portfoli.html   # Main HTML — page structure & layout
-├── styles.css      # Custom CSS — animations, glassmorphism, reveal effects
-├── script.js       # JavaScript — particle system, tilt cards, scroll reveal
-└── README.md       # Project documentation
-```
+**Live:** [portfolio-olive-chi-46.vercel.app](https://portfolio-olive-chi-46.vercel.app/)
 
 ---
 
-## ✨ Features
+## Tech Stack
 
-- **Interactive Particle Background** — Canvas-based particles that react to mouse movement
-- **Glassmorphism UI** — Frosted glass card design with backdrop blur
-- **Scroll Reveal Animations** — Elements animate into view using IntersectionObserver
-- **3D Tilt Cards** — Perspective tilt effect on skill and project cards
-- **Responsive Design** — Fully mobile-friendly layout
-- **Academic Timeline** — Visual timeline of educational milestones
-- **GitHub Stats Integration** — Live contribution graphs embedded
-- **Smooth Navigation** — Fixed header with underline hover effects
-
----
-
-## 🛠️ Tech Stack
-
-| Layer      | Technology                        |
-|------------|-----------------------------------|
-| Structure  | HTML5                             |
-| Styling    | CSS3 + Tailwind CSS (CDN)         |
-| Logic      | Vanilla JavaScript (ES6+)         |
-| Fonts      | JetBrains Mono, Google Fonts      |
-| Icons      | Material Symbols Outlined         |
-| Hosting    | Vercel / Render (for projects)    |
+| Layer     | Technology                        |
+|-----------|-----------------------------------|
+| Structure | HTML5                             |
+| Styling   | CSS3 + Inter / JetBrains Mono     |
+| Logic     | Vanilla JavaScript (ES6+)        |
+| Icons     | Material Symbols Outlined + SVG   |
+| Hosting   | Vercel                            |
 
 ---
 
-## 🌐 Live Projects
+## Features
 
-| Project       | Live URL                                         |
-|---------------|--------------------------------------------------|
-| Root Bridge   | [rootbridge-zeta.vercel.app](https://rootbridge-zeta.vercel.app) |
-| Huddle        | [huddle-in83.onrender.com](https://huddle-in83.onrender.com)     |
-
----
-
-## 📬 Contact
-
-- 📧 Email: [anubhavmaurya2204@gmail.com](mailto:anubhavmaurya2204@gmail.com)
-- 💼 LinkedIn: [anubhav-maurya-973482379](https://linkedin.com/in/anubhav-maurya-973482379)
-- 🐙 GitHub: [anubhavmaurya22](https://github.com/anubhavmaurya22)
-- 📍 Location: Kanpur, India
+- **Interactive Particle Background** — Canvas-based particles with mouse interaction
+- **Scroll Reveal Animations** — IntersectionObserver-driven entrance animations
+- **Case Study Modals** — Detailed project breakdowns with metrics
+- **Mobile Navigation** — Hamburger menu with keyboard support
+- **Active Nav Highlighting** — Scroll-based active section detection
+- **Responsive Design** — Mobile, tablet, and desktop layouts
+- **Accessibility** — Semantic HTML, keyboard navigation, reduced-motion support
+- **Dark Theme** — Professional dark-first design with accent colors
 
 ---
 
-## 🚀 Getting Started
+## Projects Showcased
 
-No build step required. Just open the HTML file in a browser:
+| Project                  | Type          | Links                                                                                          |
+|--------------------------|---------------|-------------------------------------------------------------------------------------------------|
+| Learner Intelligence     | ML / AI       | [GitHub](https://github.com/anubhavmaurya22/EduPro-LearnerIntelligence-Platform)               |
+| Nassau Candy Optimization| Data          | [GitHub](https://github.com/anubhavmaurya22/Nassau-Candy-Factory-Reallocation)                  |
+| Root Bridge              | Full Stack    | [Live](https://rootbridge-zeta.vercel.app/)                                                     |
+| Huddle                   | Backend / API | [Live](https://huddle-in83.onrender.com/)                                                       |
+
+---
+
+## Contact
+
+- Email: [anubhavmaurya2204@gmail.com](mailto:anubhavmaurya2204@gmail.com)
+- LinkedIn: [anubhav-maurya-973482379](https://linkedin.com/in/anubhav-maurya-973482379)
+- GitHub: [anubhavmaurya22](https://github.com/anubhavmaurya22)
+
+---
+
+## Getting Started
+
+No build step required. Open `index.html` in any modern browser.
 
 ```bash
-# Clone the repo
 git clone https://github.com/anubhavmaurya22/<repo-name>.git
-
-# Open in browser
-start portfoli.html
+start index.html
 ```
-
-Or simply drag `portfoli.html` into any modern browser.
 
 ---
 
-## 📄 License
-
-© 2025 Anubhav Maurya. All rights reserved.
-=======
-# portfolio-
-it my portfolio for work and submit in the companies 
->>>>>>> a44af1339d8503188c36541082fa5f2aeaf9ee1c
+© Anubhav Maurya. All rights reserved.
